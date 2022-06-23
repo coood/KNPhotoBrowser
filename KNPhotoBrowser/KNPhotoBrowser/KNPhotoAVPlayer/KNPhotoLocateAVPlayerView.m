@@ -328,9 +328,6 @@
 }
 
 - (void)photoAVPlayerActionViewDidLongPress:(UILongPressGestureRecognizer *)longPress{
-    if (_isPlaying == false) {
-        return;
-    }
     if ([_delegate respondsToSelector:@selector(photoPlayerLongPress:)]) {
         [_delegate photoPlayerLongPress:longPress];
     }
